@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Esatet Price Analyzer</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>Real Esate Price Analyzer</h1>
+
+    <div>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="searchCity()">Search City</button>
+    </div>
+    <br>
+
+    <div id="searchResult"></div>
+
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Price(Lakhs)</th>
+            <th>Bedrooms</th>
+        </tr> 
+        <tr>
+            <td>Patna</td>
+            <td>45</td></td>
+            <td>3</td>
+        </tr> 
+        
+        <tr>
+            <td>Delhi</td>
+            <td>80</td>
+            <td>4</td>
+        </tr>
+
+         <tr>
+            <td>Mumbai</td>
+            <td>120</td>
+            <td>3</td>
+        </tr>
+         <tr>
+            <td>Pune</td>
+            <td>70</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <br>
+
+    <button onclick="analyzeprice()">Analyze Prices</button>
+
+    <div id="result"></div>
+    <canvas id="priceChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
