@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "plot-images"
+public_folder: "/plot-images"
+
+collections:
+  - name: "plots"
+    label: "Plots"
+    folder: "plots"
+    create: true
+    fields:
+      - { label: "Project Name", name: "title", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Plot Size", name: "size", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
